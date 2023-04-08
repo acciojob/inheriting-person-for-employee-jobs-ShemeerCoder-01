@@ -1,7 +1,7 @@
 // complete this js code
 function Person(name, age) {
-	AgeVal = age;
-	nameVal = name;
+	this.AgeVal = age;
+	this.nameVal = name;
 }
 Person.prototype.greet = function(){
 		console.log(`Hello my name is ${this.nameVal}, I am ${this.AgeVal} years old.`);
@@ -9,7 +9,7 @@ Person.prototype.greet = function(){
 
 function Employee(name, age, jobTitle) {
 	Person.call(name,age);
-	jobTitle = jobTitle;
+	this.jobTitle = jobTitle;
 }
 
 Employee.prototype = Person.prototype;
