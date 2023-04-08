@@ -8,7 +8,7 @@ function Person(name, age) {
 
 // greet method added to Person prototype
 Person.prototype.greet = function(){
-		console.log(`Hello, my name is ${this.nameVal} I am ${this.AgeVal} years old.`);
+		console.log(`Hello, my name is ${this.nameVal} and I am ${this.AgeVal} years old.`);
 	}
 
 // Employee constructor function
