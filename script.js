@@ -8,7 +8,7 @@ function Person(name, age) {
 
 // greet method added to Person prototype
 Person.prototype.greet = function(){
-		console.log(`Hello my name is ${this.nameVal}, I am ${this.AgeVal} years old.`);
+		console.log(`Hello, my name is ${this.nameVal} I am ${this.AgeVal} years old.`);
 	}
 
 // Employee constructor function
@@ -23,7 +23,7 @@ Employee.prototype.constructor = Employee;
 
 // jobGreet method added to Employee prototype
 Employee.prototype.jobGreet = function(){
-		console.log(`Hello my name is ${this.nameVal}, I am ${this.ageVal} years old, and my job title is${this.jobTitle}.`);
+		console.log(`Hello my name is ${this.nameVal}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	}
 
 let person1 = new Person("Shemeer",24);
